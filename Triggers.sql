@@ -73,6 +73,5 @@ GO
 
 --------------------------------
 INSERT INTO ActionTable (rule_id, device_id, action_type, parameters)
-VALUES (1, 76, 'turn_on_light', 'test');
-GO
+VALUES (1, 83, 'turn_on_light', 'test');
 
