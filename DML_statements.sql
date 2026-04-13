@@ -1222,9 +1222,8 @@ GO
 
 
 
-
 UPDATE Rules
-SET status = 'disabled'
+SET status = 'inactive'
 WHERE rule_id = 3;
 
 
@@ -1234,9 +1233,8 @@ SET last_seen = GETDATE()
 WHERE sensor_id = 10;
 
 
-
 DELETE FROM Event
-WHERE timestamp < DATEADD(day, -30, GETDATE());
+WHERE [timestamp] < DATEADD(day, -30, GETDATE());
 
 
 DELETE FROM UserHome
