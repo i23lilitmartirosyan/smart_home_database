@@ -1,1 +1,4 @@
 CREATE DATABASE smart_home;
+
+USE smart_home;
+GO
